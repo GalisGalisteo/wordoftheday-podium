@@ -14,6 +14,7 @@ const updateData = async () => {
     try {
         data = await fetchData(url);
     } catch (error) {
+        document.querySelector('#error-message').style.display = 'block';
         console.error(error);
         return;
     }
