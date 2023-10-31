@@ -10,70 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 
     <title>Puntuación Final</title>
-    <style>
-        .podium {
-            display: flex;
-        }
-
-        .stand {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            background-color: #f0f0f0;
-            /* Cambio el fondo a un color gris claro para mejorar el contraste */
-        }
-
-        .place-number {
-            font-size: 24px;
-            color: #333;
-            /* Cambio el color a un tono más oscuro para mejorar la legibilidad */
-            font-weight: bold;
-        }
-
-        .player-name {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #333;
-            /* Cambio el color a un tono más oscuro para mejorar la legibilidad */
-        }
-
-        .score {
-            font-size: 20px;
-            color: #000;
-            /* Cambio el color a negro para mejorar la legibilidad */
-        }
-
-        .first-place {
-            background-color: #ffd700;
-        }
-
-        .second-place {
-            background-color: #c0c0c0;
-        }
-
-        .third-place {
-            background-color: #cd7f32;
-        }
-
-        .stand {
-            border: 2px solid #000;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            margin: 0 10px;
-        }
-
-        button {
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-    </style>
 </head>
 
 <body>
     <main class="container">
-        <div class="podium">
+        <div id="podium" class="podium">
             <div class="stand first-place">
                 <div class="place-number">1st</div>
                 <div id="first-position" class="player-name">Player 1</div>
@@ -90,6 +31,7 @@
                 <div class="score"><span id="score-3">X</span> palabras adivinadas</div>
             </div>
         </div>
+        <div id="players"></div>
         <div>
             <button id="update-btn">
                 Actualizar Podium
